@@ -5,12 +5,12 @@ Run the tests in the `spec` folder, and write your code in `bubble_sort.rb`.
 
 Keep in mind all the different ways you can explore your code:
 
-**From the Command Line**:  
+**From the Command Line**:
 ```ruby
 ruby bubble_sort.rb # just make sure you're printing some output!
 ```
 
-**In the REPL**:  
+**In the REPL**:
 ```ruby
 irb
 # or
@@ -22,7 +22,7 @@ pry > require "./bubble_sort.rb"
 pry > bubble_sort([3,2,1])  # => when we start this returns nil
 ```
 
-**Using Rspec Tests**:   
+**Using Rspec Tests**:
 ```bash
 rspec
 # or
@@ -35,26 +35,26 @@ rspec -e "handles zero"
 # Bubble Sort Refresher
 Pre-work: [First, some Hungarian ("Csángó") folk dance](https://www.youtube.com/watch?v=lyZQPjUT5B4)
 
-Bubble sort is one of the first sorting algorithms you should try and master.  It essentially forces larger elements to 'sink' to the bottom/back while inadvertently 'floating' smaller elements to the top/front of a list.  This is done with numerous comparisons between one element in an array and its neighbor.  
+Bubble sort is one of the first sorting algorithms you should try and master.  It essentially forces larger elements to 'sink' to the bottom/back while inadvertently 'floating' smaller elements to the top/front of a list.  This is done with numerous comparisons between one element in an array and its neighbor.
 
 ### Sort the list using Bubble Sort: [5,4,2,3,1,6]
 
 #### Iteration 1
 Look at the first two elements in the list.
 
-0: [**5, 4**,2,3,1,6]  
+0: [**5, 4**,2,3,1,6]
 
 Is 5 > 4 ? Yes! Swap!
 
 If an element on the left (5) is greater than the element on the right (4), the two elements 'swap' locations
 
-1: [4,**5,2**,3,1,6]  
+1: [4,**5,2**,3,1,6]
 
-2: [4,2,**5,3**,1,6]  
+2: [4,2,**5,3**,1,6]
 
-3: [4,2,3,**5,1**,6]  
+3: [4,2,3,**5,1**,6]
 
-4: [4,2,3,1,**5,6**]  
+4: [4,2,3,1,**5,6**]
 
 
 **Important:** We now know that the last element in the list is the largest element in the list. There's no need to do a comparison with that number ever again.
@@ -76,7 +76,7 @@ Remember: we know that the last element is the largest number in the list.  Ther
 
 ### Iteration 3
 
-0: [**2,3**,1,4,~~5,6~~]  
+0: [**2,3**,1,4,~~5,6~~]
 
 If an element on the left has met a larger or equal element, we look at its bigger neighbor and now compare the larger neighbor to it's neighbor on the right.  The process is continued until we reach this iteration's established end.
 
